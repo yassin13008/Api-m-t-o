@@ -5,8 +5,10 @@ let url1=`https://api.openweathermap.org/data/2.5/weather?q=Marseille&appid=${ap
 fetch(url1).then((response) => response.json().then((data) => {
     console.log(data);
     document.querySelector("#city").innerHTML = data.name;
-document.querySelector("#temp").innerHTML = data.main.temp + "°";
-document.querySelector("#humidity").innerHTML = data.main.humidity + "%";
-document.querySelector("#wind").innerHTML = data.wind.speed + "km/h";
+document.querySelector("#temp").innerHTML ="<i class='fa-solid fa-temperature-three-quarters'></i>" + data.main.temp + "°";
+
+document.querySelector("#humidity").innerHTML = "<i class='fa-solid fa-droplet'></i>" + data.main.humidity ;
+
+document.querySelector("#wind").innerHTML ="<i class='fa-solid fa-wind'></i>" + data.wind.speed + "km/h";
 }))
 
