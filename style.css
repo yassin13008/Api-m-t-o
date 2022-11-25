@@ -1,0 +1,28 @@
+body {
+    background-image: url(aurore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.box-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width : 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color:white
+}
+
+#city,#humidity,#temp,#wind{
+    background-color: rgba(6, 214, 145, 0.658);
+}
