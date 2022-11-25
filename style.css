@@ -13,16 +13,20 @@ body {
 }
 
 .box {
-    width : 150px;
-    height: 150px;
+    width : 140px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    color:white
+    color:white;
 }
 
 #city,#humidity,#temp,#wind{
     background-color: rgba(6, 214, 145, 0.658);
+    margin: 1px;
+    border-radius: 5px;
+    box-shadow: 5px whitesmoke;
+    gap: 10px;
 }
